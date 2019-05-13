@@ -1,0 +1,6 @@
+
+UnitTest/obj/*
+UnitTest/bin/*
+Log/obj/*
+Log/bin/*
+.vs/*
