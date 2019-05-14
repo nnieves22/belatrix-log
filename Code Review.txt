@@ -1,17 +1,17 @@
 - We should make all private properties follow the same pattern of names.
 - Instead of using several Boolean values, we could use an enumeration to configure what we want to log and identify each type of message.
-- We are not saving the result of string.Trim().
+- We are not saving the result of message.Trim().
 - We could use string.IsNullOrEmpty to know if a string is empty.
 - We could create our custom exceptions, perhaps with a specific code.
 - We could use more descriptive local variables names. 
-- We are logging alway in the three destinations, no matter the configuration.
+- We are logging always in the three destinations, no matter the configuration.
 - DateTime.Now will return a different value depending on the time zone of hosting. It would be better to use UtcNow or determine a specific time zone.
-- Always initialize the properties. (string l)
+- Always initialize the properties.
 - We would be reading a non-existing file, we should reverse the condition. 
 - If statements could be simplified?. Could we do a function with the code that is repeated?
 - There are clearer ways to attach information to a file. Also, if this process is used simultaneously in multiple threads, you can generate a blocked file exception. Look at this example: https://johandorper.com/log/
 - We should reset the console to its original configuration after adding a message.
 - In the case of the log file we have no way of knowing what kind of message we are saving.
-- Are we using the initialized ​​variable for something?
+- Are we using the initialized variable for something?
 - Can we validate the configuration in the logger's constructor?
 - Could we encapsulate the operation of each type of log in different classes?
